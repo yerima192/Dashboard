@@ -148,6 +148,9 @@ nav .nav-link.active{
   background-color: #da44032b;
   color:#C47457 ;
 }
+.emation button:hover{
+  background-color:#a6a6a645 !important;
+}
 
 
 
