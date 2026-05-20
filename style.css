@@ -40,7 +40,12 @@ body {
 }
 
 .blanche{
-  background-color: #929292;
+   background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.35),
+        rgba(180,180,180,0.25),
+        rgba(120,120,120,0.35)
+    );
   width: 470px;
 }
 .hauteur{
@@ -53,10 +58,13 @@ body {
 }
 .sidebar {
   width: 280px;
-  background: #929292;
+  background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.35),
+        rgba(180,180,180,0.25),
+        rgba(120,120,120,0.35)
+    );
 }
-
-
 
 .lienhover:hover {
   background-color: #A6A6A6;
@@ -66,14 +74,26 @@ body {
 }
 
 .main-content {
+  height: 100vh !important;
+  margin-left: 300px;
   flex: 1;
 }
 
 .sidebar{
-    background-color: #929292 !important;
+     background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.35),
+        rgba(180,180,180,0.25),
+        rgba(120,120,120,0.35)
+    ) !important; 
 }
 .couleurunique{
-  background-color: #929292;
+   background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.35),
+        rgba(180,180,180,0.25),
+        rgba(120,120,120,0.35)
+    );
 
 }
 .vide{
@@ -85,8 +105,8 @@ body {
 .drapeau{
   width: 80%;
   height: 50%;
- 
 }
+
 .lienhover1{
   background-color: #A6A6A6;
 }
@@ -125,7 +145,6 @@ nav .nav-link.active{
 
 }
 .mode-active{
-    background-color: #f8f0f02f;
     cursor: pointer;
 
 }
@@ -151,6 +170,23 @@ nav .nav-link.active{
 .emation button:hover{
   background-color:#a6a6a645 !important;
 }
+.recp{
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+     background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.35),
+        rgba(180,180,180,0.25),
+        rgba(120,120,120,0.35)
+    );
+
+}
+.scroll-area {
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 120px; /* important pour ne pas cacher sous navbar */
+}
 
 
 
@@ -158,12 +194,11 @@ nav .nav-link.active{
 
 
 
-
-/* TABLETTE & MOBILE */
 @media (max-width: 991px) {
 
   .main-content {
     width: 100%;
+    margin-left: 0;
   }
 
 }

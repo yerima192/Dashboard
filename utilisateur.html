@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,24 +27,18 @@
 
     <div class="container-fluid py-3">
 
-        <!-- NAVBAR MOBILE & TABLETTE -->
-        <nav class="navbar navbar-dark  rounded-3 px-3 py-2 d-lg-none mb-3 shadow-lg">
-
+        <nav class="navbar navbar-dark rounded-3 px-3 py-2 d-lg-none mb-3 shadow-lg">
             <button class="btn text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
-
                 <i class="bi bi-list fs-2"></i>
             </button>
 
-            <div class="">
-                <img src="./Assets/Logo (1).png" alt="" class="img-fluid">
-            </div>
-
+            <img src="./Assets/Logo (1).png" class="img-fluid" />
         </nav>
 
         <div class="d-flex gap-3 mt-4">
 
             <!-- SIDEBAR DESKTOP -->
-            <aside class="sidebar d-none d-lg-flex flex-column text-white p-3 rounded-1 shadow-sm">
+            <aside class="sidebar d-none d-lg-flex flex-column text-white p-3 rounded-1 shadow-sm   position-fixed">
 
                 <div class="mb-4">
                     <img src="./Assets/Logo (1).png" alt="" class="img-fluid">
@@ -75,7 +70,7 @@
                         <i class="bi bi-chevron-right"></i>
                     </a>
 
-                    <a href="./calendrier.html"
+                    <a href="#"
                         class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
                         Calendrier
                         <i class="bi bi-chevron-right"></i>
@@ -88,70 +83,76 @@
                     </a>
 
                 </div>
+
+            
 
             </aside>
+                <!-- sidebar tablette -->
+                <div class="offcanvas offcanvas-start text-white sidebar d-lg-none" tabindex="-1" id="sidebarMenu">
 
-            <!-- sidebar tablette -->
-            <div class="offcanvas offcanvas-start text-white sidebar d-lg-none" tabindex="-1" id="sidebarMenu">
+                    <div class="offcanvas-header border-bottom">
 
-                <div class="offcanvas-header border-bottom">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-stack fs-3"></i>
+                            <h4 class="m-0">Dashboard</h4>
+                        </div>
 
-                    <div class="d-flex align-items-center gap-2">
-                        <i class="bi bi-stack fs-3"></i>
-                        <h4 class="m-0">Dashboard</h4>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+                        </button>
+
                     </div>
 
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
-                    </button>
+                    <div class="offcanvas-body d-flex flex-column">
+
+                        <a href="./dashboard.html"
+                            class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 active mt-3">
+                            Dashboard
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+
+                        <a href="./utilisateur.html"
+                            class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
+                            Utilisateur
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+
+                        <a href="./messagerie.html"
+                            class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
+                            Messagerie
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+
+                        <a href="./tache.html"
+                            class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
+                            Taches
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+
+                        <a href="./calendrier.html"
+                            class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
+                            Calendrier
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+
+                        <a href="./compte.html"
+                            class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
+                            Compte
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+
+                    </div>
 
                 </div>
 
-                <div class="offcanvas-body d-flex flex-column">
-
-                    <a href="./dashboard.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5  mt-3">
-                        Dashboard
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-
-                    <a href="./utilisateur.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3 active">
-                        Utilisateur
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-
-                    <a href="./messagerie.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
-                        Messagerie
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-
-                    <a href="./tache.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
-                        Taches
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-
-                    <a href="./calendrier.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
-                        Calendrier
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-
-                    <a href="./compte.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
-                        Compte
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-
-                </div>
-
-            </div>
 
 
+
+
+
+
+        </div>
 
             <main class="main-content  ">
-
                 <div class="couleurunique shadow-sm text-white p-4 d-flex justify-content-between  rounded-1">
                     <div>
                         <h3>Bonjour, Yerima Djibo</h3>
@@ -170,6 +171,7 @@
                     </div>
 
                 </div>
+
 
                 <div class="container-fluid couleurunique rounded-1 text-white py-4 mt-4">
 
@@ -630,8 +632,6 @@
                 </div>
 
             </main>
-
-        </div>
 
     </div>
 
