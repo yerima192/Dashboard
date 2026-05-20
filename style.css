@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .bg {
@@ -64,6 +64,7 @@ body {
         rgba(180,180,180,0.25),
         rgba(120,120,120,0.35)
     );
+    height: 92vh;
 }
 
 .lienhover:hover {
@@ -77,6 +78,7 @@ body {
   height: 100vh !important;
   margin-left: 300px;
   flex: 1;
+  overflow: hidden !important;
 }
 
 .sidebar{
@@ -182,14 +184,22 @@ nav .nav-link.active{
     );
 
 }
-.scroll-area {
-  height: 100vh;
-  overflow-y: auto;
-  padding-top: 120px; /* important pour ne pas cacher sous navbar */
+.scrollspy-example{
+    height: 600px;
+    overflow-y: auto;
 }
 
+.nav-pills .nav-link{
+    color: white;
+}
 
-
+.nav-pills .nav-link.active{
+    background-color: orange;
+    color: white;
+}
+.couleurunique1{
+  background-color: #a9a7a71f;
+}
 
 
 
@@ -200,5 +210,5 @@ nav .nav-link.active{
     width: 100%;
     margin-left: 0;
   }
-
+ 
 }

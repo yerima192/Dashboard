@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +46,7 @@
                 <div class="d-flex flex-column py-2">
 
                     <a href="./dashboard.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 active mt-3">
+                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5  mt-3">
                         Dashboard
                         <i class="bi bi-chevron-right"></i>
                     </a>
@@ -67,7 +64,7 @@
                     </a>
 
                     <a href="./tache.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
+                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3 active">
                         Taches
                         <i class="bi bi-chevron-right"></i>
                     </a>
@@ -171,50 +168,83 @@
 
 
 
+
                 <div class="container-fluid couleurunique mt-4 py-4">
+
+                    <!-- HEADER -->
                     <div class="moinfoncé p-2 rounded-1 shadow d-flex justify-content-between">
+
                         <div class="text-white fs-5">
                             <p>Changer le mode de visialition</p>
                         </div>
+
                         <div class="text-white d-flex gap-3 ">
-                            <div class="m-2  p-2 rounded-1 mode-active border recp">
-                                <a href="./kanban.html" class="text-decoration-none text-white "> <i
-                                        class="bi bi-kanban m-2"></i>Kanban
 
+                            <div class="m-2 p-2 rounded-1 mode-active border recp">
+                                <a href="./kanban.html" class="text-decoration-none text-white">
+                                    <i class="bi bi-kanban m-2"></i>Kanban
                                 </a>
-
                             </div>
-                            <div class="m-2  p-2 rounded-1 ">
-                                <a href="./tache.html" class="text-decoration-none text-white"> <i
-                                        class="bi bi-list-task m-2"></i>
-                                    List</a>
 
+                            <div class="m-2 p-2 rounded-1">
+                                <a href="./tache.html" class="text-decoration-none text-white">
+                                    <i class="bi bi-list-task m-2"></i>
+                                    List
+                                </a>
                             </div>
-                            <div class="m-2  p-2 rounded-1">
+
+                            <div class="m-2 p-2 rounded-1">
                                 <i class="bi bi-calendar m-2"></i>
                                 Calendrier
                             </div>
-                        </div>
 
+                        </div>
                     </div>
 
+                    <nav id="navbar-example2" class="navbar moinfoncé mt-4 p-2 rounded-1">
+                        <ul class="nav nav-pills gap-2">
 
-                    <div class=" row mt-4 p-3">
-                        <div class="col-lg-4 ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white active" href="#attente">
+                                    <i class="bi bi-hourglass me-1"></i> En attente
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#cours">
+                                    <i class="bi bi-hourglass-split me-1"></i> En cours
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#termine">
+                                    <i class="bi bi-hourglass-bottom me-1"></i> Terminé
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <div class="row mt-4 p-3 scrollspy-example moinfoncé rounded-1 text-white" data-bs-spy="scroll"
+                        data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" tabindex="0"
+                        style="height: 570px; overflow-y: auto;">
+
+                        <div class="col-lg-4">
+
                             <div class="row g-4">
 
-                                <div class="col-12 ">
+                                <div class="col-12" id="attente">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                    <div class="p-3 rounded-1 moinfoncé">
 
                                         <h4 class="text-white fw-bold mb-4">
                                             <i class="bi bi-hourglass me-2"></i>
                                             Taches en attente
                                         </h4>
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
 
-                                            <p class=" mb-4 fs-5">
+                                            <p class="mb-4 fs-5">
                                                 Gestion de l'inventaire
                                             </p>
 
@@ -225,15 +255,14 @@
 
                                                     <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -252,42 +281,38 @@
 
                                         </div>
 
-
-
                                     </div>
-
                                 </div>
-                                <div class="col-12 ">
+                                <div class="col-12" id="attente">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                    <div class="p-3 rounded-1 moinfoncé">
 
-                                        <h5 class="text-white fw-bolder mb-4">
-                                            Développement du Minimum Viable
-                                            Product
-                                        </h5>
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass me-2"></i>
+                                            Taches en attente
+                                        </h4>
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
 
-                                            <p class=" mb-4 fs-5">
+                                            <p class="mb-4 fs-5">
                                                 Gestion de l'inventaire
                                             </p>
 
                                             <div class="d-flex gap-3 mb-4 flex-wrap">
 
-                                                <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center ">
                                                     <i class="bi bi-people fs-2 me-3"></i>
 
                                                     <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -306,41 +331,38 @@
 
                                         </div>
 
-
-
                                     </div>
-
                                 </div>
-                                <div class="col-12 ">
+                                <div class="col-12" id="attente">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                    <div class="p-3 rounded-1 moinfoncé">
 
-                                        <h5 class="text-white fw-bolder mb-4">
-                                          Gestion de la communication
-                                        </h5>
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass me-2"></i>
+                                            Taches en attente
+                                        </h4>
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
 
-                                            <p class=" mb-4 fs-5">
+                                            <p class="mb-4 fs-5">
                                                 Gestion de l'inventaire
                                             </p>
 
                                             <div class="d-flex gap-3 mb-4 flex-wrap">
 
-                                                <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center ">
                                                     <i class="bi bi-people fs-2 me-3"></i>
 
                                                     <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -359,41 +381,38 @@
 
                                         </div>
 
-
-
                                     </div>
-
                                 </div>
-                                <div class="col-12 ">
+                                <div class="col-12" id="attente">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                    <div class="p-3 rounded-1 moinfoncé">
 
-                                        <h5 class="text-white fw-bolder mb-4">
-                                          Gestion de la communication
-                                        </h5>
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass me-2"></i>
+                                            Taches en attente
+                                        </h4>
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
 
-                                            <p class=" mb-4 fs-5">
+                                            <p class="mb-4 fs-5">
                                                 Gestion de l'inventaire
                                             </p>
 
                                             <div class="d-flex gap-3 mb-4 flex-wrap">
 
-                                                <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center ">
                                                     <i class="bi bi-people fs-2 me-3"></i>
 
                                                     <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -412,89 +431,79 @@
 
                                         </div>
 
+                                    </div>
+                                </div>
+                                <div class="col-12" id="attente">
 
+                                    <div class="p-3 rounded-1 moinfoncé">
+
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass me-2"></i>
+                                            Taches en attente
+                                        </h4>
+
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+
+                                            <p class="mb-4 fs-5">
+                                                Gestion de l'inventaire
+                                            </p>
+
+                                            <div class="d-flex gap-3 mb-4 flex-wrap">
+
+                                                <div class="d-flex align-items-center ">
+                                                    <i class="bi bi-people fs-2 me-3"></i>
+
+                                                    <div class="d-flex m-2">
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            HH</div>
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            GG</div>
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            uu</div>
+                                                    </div>
+                                                </div>
+
+                                                <i class="bi bi-three-dots fs-3 mt-3"></i>
+                                            </div>
+
+                                            <p class="fs-5">
+                                                <i class="bi bi-calendar m-2"></i>
+                                                17 Mars - 20 Mars
+                                            </p>
+
+                                            <p class="fs-5">
+                                                <i class="bi bi-bookmark me-3 icon-style"></i>
+                                                Ordre de priorité
+                                            </p>
+
+                                        </div>
 
                                     </div>
-
                                 </div>
-                              
-
-
-
 
                             </div>
                         </div>
 
                         <div class="col-lg-4">
+
                             <div class="row g-4">
 
-                                <div class="col-12 ">
+                                <div class="col-12" id="cours">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                    <div class="p-3 rounded-1 moinfoncé">
 
                                         <h4 class="text-white fw-bold mb-4">
-                                         <i class="bi bi-hourglass-split me-2"></i>
+                                            <i class="bi bi-hourglass-split me-2"></i>
                                             Taches en Cours
                                         </h4>
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
 
-                                            <p class=" mb-4 fs-5">
-                                               Mise en place du systeme d'accomplat
-                                            </p>
-
-                                            <div class="d-flex gap-3 mb-4 flex-wrap">
-
-                                                <div class="d-flex align-items-center">
-                                                    <i class="bi bi-people fs-2 me-3"></i>
-
-                                                    <div class="d-flex m-2 ">
-                                                        <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
-                                                            HH</div>
-                                                        <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
-                                                            GG</div>
-                                                        <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
-                                                            uu</div>
-
-                                                    </div>
-                                                </div>
-
-                                                <i class="bi bi-three-dots fs-3 mt-3"></i>
-                                            </div>
-
-                                            <p class="fs-5">
-                                                <i class="bi bi-calendar m-2"></i>
-                                                17 Mars - 20 Mars
-                                            </p>
-
-                                            <p class="fs-5">
-                                                <i class="bi bi-bookmark me-3 icon-style"></i>
-                                                Ordre de priorité
-                                            </p>
-
-                                        </div>
-
-
-
-                                    </div>
-
-                                </div>
-                                <div class="col-12 ">
-
-                                    <div class=" p-3  rounded-1 moinfoncé">
-
-                                        <h5 class="text-white fw-bolder mb-4">
-                                            Développement du Minimum Viable
-                                            Product
-                                        </h5>
-
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
-
-                                            <p class=" mb-4 fs-5">
-                                                Gestion de l'inventaire
+                                            <p class="mb-4 fs-5">
+                                                Mise en place du systeme d'accomplat
                                             </p>
 
                                             <div class="d-flex gap-3 mb-4 flex-wrap">
@@ -504,15 +513,14 @@
 
                                                     <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -531,34 +539,128 @@
 
                                         </div>
 
+                                    </div>
+                                </div>
+                                <div class="col-12" id="cours">
 
+                                    <div class="p-3 rounded-1 moinfoncé">
+
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass-split me-2"></i>
+                                            Taches en Cours
+                                        </h4>
+
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+
+                                            <p class="mb-4 fs-5">
+                                                Mise en place du systeme d'accomplat
+                                            </p>
+
+                                            <div class="d-flex gap-3 mb-4 flex-wrap">
+
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-people fs-2 me-3"></i>
+
+                                                    <div class="d-flex m-2">
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            HH</div>
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            GG</div>
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            uu</div>
+                                                    </div>
+                                                </div>
+
+                                                <i class="bi bi-three-dots fs-3 mt-3"></i>
+                                            </div>
+
+                                            <p class="fs-5">
+                                                <i class="bi bi-calendar m-2"></i>
+                                                17 Mars - 20 Mars
+                                            </p>
+
+                                            <p class="fs-5">
+                                                <i class="bi bi-bookmark me-3 icon-style"></i>
+                                                Ordre de priorité
+                                            </p>
+
+                                        </div>
 
                                     </div>
-
                                 </div>
+                                <div class="col-12" id="cours">
 
-                              
+                                    <div class="p-3 rounded-1 moinfoncé">
 
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass-split me-2"></i>
+                                            Taches en Cours
+                                        </h4>
 
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
 
+                                            <p class="mb-4 fs-5">
+                                                Mise en place du systeme d'accomplat
+                                            </p>
+
+                                            <div class="d-flex gap-3 mb-4 flex-wrap">
+
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-people fs-2 me-3"></i>
+
+                                                    <div class="d-flex m-2">
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            HH</div>
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            GG</div>
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            uu</div>
+                                                    </div>
+                                                </div>
+
+                                                <i class="bi bi-three-dots fs-3 mt-3"></i>
+                                            </div>
+
+                                            <p class="fs-5">
+                                                <i class="bi bi-calendar m-2"></i>
+                                                17 Mars - 20 Mars
+                                            </p>
+
+                                            <p class="fs-5">
+                                                <i class="bi bi-bookmark me-3 icon-style"></i>
+                                                Ordre de priorité
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
+
                         <div class="col-lg-4">
+
                             <div class="row g-4">
 
-                                <div class="col-12 ">
+                                <div class="col-12" id="termine">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                    <div class="p-3 rounded-1 moinfoncé">
 
                                         <h4 class="text-white fw-bold mb-4">
-                                            <i class="bi bi-hourglass me-2"></i>
+                                            <i class="bi bi-hourglass-bottom me-2"></i>
                                             Taches en attente
                                         </h4>
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
 
-                                            <p class=" mb-4 fs-5">
+                                            <p class="mb-4 fs-5">
                                                 Gestion de l'inventaire
                                             </p>
 
@@ -567,17 +669,16 @@
                                                 <div class="d-flex align-items-center ">
                                                     <i class="bi bi-people fs-2 me-3"></i>
 
-                                                    <div class="d-flex m-2 ">
+                                                    <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -596,42 +697,39 @@
 
                                         </div>
 
-
-
                                     </div>
-
                                 </div>
-                                <div class="col-12 ">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                <div class="col-12" id="termine">
 
-                                        <h5 class="text-white fw-bolder mb-4">
-                                            Développement du Minimum Viable
-                                            Product
-                                        </h5>
+                                    <div class="p-3 rounded-1 moinfoncé">
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass-bottom me-2"></i>
+                                            Taches en attente
+                                        </h4>
 
-                                            <p class=" mb-4 fs-5">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+
+                                            <p class="mb-4 fs-5">
                                                 Gestion de l'inventaire
                                             </p>
 
                                             <div class="d-flex gap-3 mb-4 flex-wrap">
 
-                                                <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center ">
                                                     <i class="bi bi-people fs-2 me-3"></i>
 
                                                     <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -650,41 +748,39 @@
 
                                         </div>
 
-
-
                                     </div>
-
                                 </div>
-                                <div class="col-12 ">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                <div class="col-12" id="termine">
 
-                                        <h5 class="text-white fw-bolder mb-4">
-                                          Gestion de la communication
-                                        </h5>
+                                    <div class="p-3 rounded-1 moinfoncé">
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass-bottom me-2"></i>
+                                            Taches en attente
+                                        </h4>
 
-                                            <p class=" mb-4 fs-5">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+
+                                            <p class="mb-4 fs-5">
                                                 Gestion de l'inventaire
                                             </p>
 
                                             <div class="d-flex gap-3 mb-4 flex-wrap">
 
-                                                <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center ">
                                                     <i class="bi bi-people fs-2 me-3"></i>
 
                                                     <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -703,41 +799,39 @@
 
                                         </div>
 
-
-
                                     </div>
-
                                 </div>
-                                <div class="col-12 ">
 
-                                    <div class=" p-3  rounded-1 moinfoncé">
+                                <div class="col-12" id="termine">
 
-                                        <h5 class="text-white fw-bolder mb-4">
-                                          Gestion de la communication
-                                        </h5>
+                                    <div class="p-3 rounded-1 moinfoncé">
 
-                                        <div class=" mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass-bottom me-2"></i>
+                                            Taches en attente
+                                        </h4>
 
-                                            <p class=" mb-4 fs-5">
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+
+                                            <p class="mb-4 fs-5">
                                                 Gestion de l'inventaire
                                             </p>
 
                                             <div class="d-flex gap-3 mb-4 flex-wrap">
 
-                                                <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center ">
                                                     <i class="bi bi-people fs-2 me-3"></i>
 
                                                     <div class="d-flex m-2">
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             HH</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             GG</div>
                                                         <div
-                                                            class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull1">
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
                                                             uu</div>
-
                                                     </div>
                                                 </div>
 
@@ -756,26 +850,67 @@
 
                                         </div>
 
+                                    </div>
+                                </div>
 
+                                <div class="col-12" id="termine">
+
+                                    <div class="p-3 rounded-1 moinfoncé">
+
+                                        <h4 class="text-white fw-bold mb-4">
+                                            <i class="bi bi-hourglass-bottom me-2"></i>
+                                            Taches en attente
+                                        </h4>
+
+                                        <div class="mb-4 shadow-sm p-2 text-white rounded-1 nonfoncé py-3">
+
+                                            <p class="mb-4 fs-5">
+                                                Gestion de l'inventaire
+                                            </p>
+
+                                            <div class="d-flex gap-3 mb-4 flex-wrap">
+
+                                                <div class="d-flex align-items-center ">
+                                                    <i class="bi bi-people fs-2 me-3"></i>
+
+                                                    <div class="d-flex m-2">
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            HH</div>
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            GG</div>
+                                                        <div
+                                                            class="border p-2 px-2 rounded-circle bg-white colororange fw-bold bull1">
+                                                            uu</div>
+                                                    </div>
+                                                </div>
+
+                                                <i class="bi bi-three-dots fs-3 mt-3"></i>
+                                            </div>
+
+                                            <p class="fs-5">
+                                                <i class="bi bi-calendar m-2"></i>
+                                                17 Mars - 20 Mars
+                                            </p>
+
+                                            <p class="fs-5">
+                                                <i class="bi bi-bookmark me-3 icon-style"></i>
+                                                Ordre de priorité
+                                            </p>
+
+                                        </div>
 
                                     </div>
-
                                 </div>
-                              
 
-
-
-
+                                <!-- RESTE COL 3 INCHANGÉ -->
                             </div>
                         </div>
 
-
-
                     </div>
-
-
-
                 </div>
+
 
 
 
