@@ -37,7 +37,7 @@
         <div class="d-flex gap-3 mt-4">
 
             <!-- SIDEBAR DESKTOP -->
-            <aside class="sidebar d-none d-lg-flex flex-column text-white p-3 rounded-1 shadow-sm   position-fixed">
+            <aside class="sidebar d-none d-lg-flex flex-column text-white p-3  shadow-lg   position-fixed">
 
                 <div class="mb-4">
                     <img src="./Assets/Logo (1).png" alt="" class="img-fluid">
@@ -52,7 +52,7 @@
                     </a>
 
                     <a href="./utilisateur.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
+                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3 active">
                         Utilisateur
                         <i class="bi bi-chevron-right"></i>
                     </a>
@@ -64,7 +64,7 @@
                     </a>
 
                     <a href="./tache.html"
-                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3 active">
+                        class="lienhover text-decoration-none p-2 rounded-2 text-white fw-bolder fs-5 mt-3">
                         Taches
                         <i class="bi bi-chevron-right"></i>
                     </a>
@@ -142,15 +142,10 @@
 
             </div>
 
-
-
-
-
         </div>
 
         <main class="main-content  ">
-
-            <div class="couleurunique shadow-sm text-white p-4 d-flex justify-content-between  rounded-1">
+            <div class="couleurunique shadow-lg text-white p-2 d-flex justify-content-between  ">
                 <div>
                     <h3>Bonjour, Yerima Djibo</h3>
                     <div>
@@ -169,10 +164,8 @@
 
             </div>
 
-
-
-            <div class="container-fluid couleurunique mt-4 ">
-                <div class="moinfoncé p-2 rounded-1 shadow d-flex justify-content-between">
+            <div class="container-fluid couleurunique mt-2 ">
+                <div class="couleurunique p-2  shadow-lg d-flex justify-content-between mt-3">
                     <div class="text-white fs-5">
                         <p>Changer le mode de visialition</p>
                     </div>
@@ -198,658 +191,556 @@
 
                 </div>
 
-                <div class="container-fluid p-4 couleurunique mt-4 rounded-1">
+                <div class="   mt-2 rounded-5">
 
-                    <div class="mt-4 border text-center py-4 rounded-1">
+                    <!-- ================= NAV TABS ================= -->
+                    <!-- <div class="moinfoncé p-3 shadow-lg ">
 
-                        <div class="row g-3">
+                        <ul class="nav row w-100 g-2" id="taskTab" role="tablist">
 
-                            <div class="col-12 col-md-4 ">
-                                <a href="./tache.html"
-                                    class="text-decoration-none text-white recp mode-active border p-3">
+                            <li class="col-12 col-md-4 nav-item">
+                                <button class="nav-link active text-white text-center recp shadow-lg" id="attente-tab"
+                                    data-bs-toggle="pill" data-bs-target="#attente" type="button">
                                     <i class="bi bi-hourglass me-2"></i>
                                     En attente
-                                </a>
-                            </div>
+                                </button>
+                            </li>
 
-                            <div class="col-12 col-md-4 ">
-                                <a href="./attente.html" class="text-decoration-none text-white p-3 rounded-1">
+                            <li class="col-12 col-md-4 nav-item">
+                                <button class="nav-link text-white text-center border-0 bg-transparent" id="cours-tab"
+                                    data-bs-toggle="pill" data-bs-target="#cours" type="button">
                                     <i class="bi bi-hourglass-split me-2"></i>
                                     En cours
-                                </a>
-                            </div>
+                                </button>
+                            </li>
 
-                            <div class="col-12 col-md-4 ">
-                                <a href="./termine.html" class="text-decoration-none text-white p-3 rounded-1">
+                            <li class="col-12 col-md-4 nav-item">
+                                <button class="nav-link text-white text-center border-0 bg-transparent" id="termine-tab"
+                                    data-bs-toggle="pill" data-bs-target="#termine" type="button">
                                     <i class="bi bi-hourglass-bottom me-2"></i>
                                     Terminé
-                                </a>
-                            </div>
+                                </button>
+                            </li>
 
-                        </div>
+                        </ul>
 
-                    </div>
+                    </div> -->
 
-                  
-                    <div class="scrollspy-example mt-4 p-3 moinfoncé  rounded-1 text-white" data-bs-spy="scroll"
-                        data-bs-smooth-scroll="true" tabindex="0" style="height: 570px;">
+                    <div class="container-fluid couleurunique  text-white py-4 mt-2">
 
-                    
-                        <div class="row p-2 shadow rounded-1 text-white">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
 
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
 
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
+                <!-- NAVBAR -->
 
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
 
-                      
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
 
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        K</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
 
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
+                
+                <nav id="navbar-example2" class="navbar    ">
 
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
+                       <div class="couleurunique p-3 shadow-lg w-100">
 
-                      
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
+                     <ul class="nav row w-100 g-2" id="taskTab" role="tablist">
 
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
+                            <li class="col-12 col-md-4 nav-item">
+                                <button class="nav-link active text-white text-center recp shadow-lg" id="attente-tab"
+                                    data-bs-toggle="pill" data-bs-target="#attente" type="button">
+                                    <i class="bi bi-hourglass me-2"></i>
+                                    En attente
+                                </button>
+                            </li>
 
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
+                            <li class="col-12 col-md-4 nav-item">
+                                <button class="nav-link text-white text-center border-0 bg-transparent" id="cours-tab"
+                                    data-bs-toggle="pill" data-bs-target="#cours" type="button">
+                                    <i class="bi bi-hourglass-split me-2"></i>
+                                    En cours
+                                </button>
+                            </li>
 
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
+                            <li class="col-12 col-md-4 nav-item">
+                                <button class="nav-link text-white text-center border-0 bg-transparent" id="termine-tab"
+                                    data-bs-toggle="pill" data-bs-target="#termine" type="button">
+                                    <i class="bi bi-hourglass-bottom me-2"></i>
+                                    Terminé
+                                </button>
+                            </li>
 
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
-                        <div class="row p-2 shadow rounded-1 text-white mt-2">
-                            <div class="col-12 col-lg-4 py-2">
-                                <span class="fw-bolder">Titre de la tâche</span>
-                                <p>Mise en place du système d’accomptat</p>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Utilisateur affectés</span>
-                                <div class="d-flex py-2">
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        G</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        D</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        C</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        H</div>
-                                    <div
-                                        class="border p-2 px-2 text-start rounded-circle bg-white colororange fw-bold bull">
-                                        M</div>
-                                    <i class="bi bi-three-dots fs-3"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-3">
-                                <span class="fw-bolder">Durée de la tâche</span>
-                                <p>17 Mars - 20 Mars</p>
-                            </div>
-
-                            <div class="col-12 col-lg-2">
-                                <span class="fw-bolder">Priorité</span>
-                            </div>
-                        </div>
+                        </ul>
 
                     </div>
+
+                </nav>
+
+
+           
+
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
+                    class="scrollspy-example p-3 mt-2 couleurunique" tabindex="0" style="height: 600px; overflow-y: scroll;">
+                    <div id="scrollspyHeading1">
+
+                        <div class="tab-pane fade  shadow-lg moinfoncé" id="attente">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        AS
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-1 shadow-lg rounded-5 moinfoncé" id="cours">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        AL
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Analystou Idi</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    marketeur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="mt-1 shadow-lg rounded-5 moinfoncé" id="termine">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        BT
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Bako Tondi</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Controleur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Active
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="mt-2 shadow-lg rounded-5  moinfoncé">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        GS
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        TT
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        TT
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        TT
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        TT
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        TT
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        TT
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
+
+                            <div class="row p-3">
+
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                        TT
+                                    </div>
+
+                                    <div>
+                                        <h5 class="mb-0">Adminou Sani</h5>
+                                        <small>Adminou@mail.com</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    Administrateur
+                                </div>
+
+                                <div class="col-md-2">
+                                    Inactive
+                                </div>
+
+                                <div class="col-md-3 d-flex gap-3">
+
+                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div> -->
 
                 </div>
+            </div>
+                </div>
+
+
 
             </div>
 
+    </div>
 
 
 
-        </main>
+
+    </div>
+
+    </main>
 
     </div>
 

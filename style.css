@@ -39,37 +39,33 @@ body {
   }
 }
 
-.blanche{
-   background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.35),
-        rgba(180,180,180,0.25),
-        rgba(120,120,120,0.35)
-    );
+.blanche {
+  background-color: hsla(0, 0%, 50%, 0.27);
   width: 470px;
+  border: solid hsla(0, 0%, 100%, 0.329) 1px;
 }
-.hauteur{
+
+.hauteur {
   height: 100vh;
 }
-.bacground{
+
+.bacground {
   background-color: #FE7439 !important;
   cursor: pointer;
 
 }
+
 .sidebar {
   width: 280px;
-  background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.35),
-        rgba(180,180,180,0.25),
-        rgba(120,120,120,0.35)
-    );
-    height: 92vh;
+  background-color: hsla(0, 0%, 50%, 0.27);
+  height: 91vh;
+  border-radius: 10px;
 }
 
 .lienhover:hover {
-  background-color: #A6A6A6;
+  background-color: #a6a6a677;
 }
+
 .active {
   background: #FE7439;
 }
@@ -81,37 +77,36 @@ body {
   overflow: hidden !important;
 }
 
-.sidebar{
-     background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.35),
-        rgba(180,180,180,0.25),
-        rgba(120,120,120,0.35)
-    ) !important; 
+.sidebar {
+  background-color: #7F7F7F;
+  border: solid hsla(0, 0%, 100%, 0.148) 1px;
 }
-.couleurunique{
-   background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.35),
-        rgba(180,180,180,0.25),
-        rgba(120,120,120,0.35)
-    );
+
+.couleurunique {
+  background-color: #7F7F7F;
+  border: solid hsla(0, 0%, 100%, 0.148) 1px;
+  border-radius: 10px;
 
 }
-.vide{
+
+.vide {
   width: 9px;
   height: 9px;
   right: 1px;
   background-color: #FE7439;
 }
-.drapeau{
+
+.drapeau {
   width: 80%;
   height: 50%;
 }
 
-.lienhover1{
-  background-color: #A6A6A6;
+.lienhover1 {
+ background-color: #7F7F7F;
+border: solid hsla(0, 0%, 100%, 0.047) 1px;
+border-radius: 10px;
 }
+
 .tret-orange {
   display: inline-block;
   width: 50px;
@@ -125,80 +120,104 @@ body {
   height: 20px;
   background-color: #FFBDA3;
 }
-.tret-fre{
+
+.tret-fre {
   background-color: #FBDBCE;
 }
-.loren{
-    background-color: #cecbcbe2 !important;
+
+.loren {
+  background-color: #cecbcbe2 !important;
 }
 
-.couleurunique1{
+.couleurunique1 {
   background-color: #60606054 !important;
 }
-.colororange{
+
+.colororange {
   color: #FE7439;
   background-color: white;
 }
-.moinfoncé{
-  background-color:#a6a6a6d1 ;
+
+.moinfoncé {
+  background-color: #888787;
+  border: solid hsla(0, 0%, 100%, 0.157) 1px;
+  border-radius: 10px;
 }
-nav .nav-link.active{
-  background-color:#f8f0f077 !important;
+
+nav .nav-link.active {
+  background-color: #f8f0f077 !important;
 
 }
-.mode-active{
-    cursor: pointer;
+
+.mode-active {
+  cursor: pointer;
 
 }
-.bull{
+
+.bull {
   margin-left: -8px;
 }
-.bull1{
+
+.bull1 {
   margin-left: -12px;
   font-size: 20px;
 }
-.nonfoncé{
+
+.nonfoncé {
   background-color: #B2B1B1;
 }
-.profil{
+
+.profil {
   width: 220px;
   height: 250px;
 }
-.orange-div{
+
+.orange-div {
   border: solid #FE7539 1px;
   background-color: #da44032b;
-  color:#C47457 ;
+  color: #C47457;
 }
-.emation button:hover{
-  background-color:#a6a6a645 !important;
+
+.emation button:hover {
+  background-color: #a6a6a645 !important;
 }
-.recp{
-  width: 180px;
+
+.recp {
+  width: 150px;
   height: 50px;
   border-radius: 10px;
-     background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.35),
-        rgba(180,180,180,0.25),
-        rgba(120,120,120,0.35)
-    );
+ background-color: #88878760;
+  border: solid hsla(0, 0%, 100%, 0.379) 1px;
+  border-radius: 10px;
 
 }
-.scrollspy-example{
-    height: 600px;
-    overflow-y: auto;
+
+.scrollspy-example {
+  height: 600px;
+  overflow-y: auto;
 }
 
-.nav-pills .nav-link{
-    color: white;
+.nav-pills .nav-link {
+  color: white;
 }
 
-.nav-pills .nav-link.active{
-    background-color: orange;
-    color: white;
+.nav-pills .nav-link.active {
+  background-color: orange;
+  color: white;
 }
-.couleurunique1{
+
+.couleurunique1 {
   background-color: #a9a7a71f;
+}
+
+
+.scrollspy-example::-webkit-scrollbar{
+    display: none;
+}
+
+.scrollspy-example{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 
@@ -210,5 +229,5 @@ nav .nav-link.active{
     width: 100%;
     margin-left: 0;
   }
- 
+
 }
