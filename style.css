@@ -40,7 +40,7 @@ body {
 }
 
 .blanche {
-  background-color: hsla(0, 0%, 50%, 0.27);
+ background: linear-gradient(135deg, #8A8A8A, #6F6F6F, #5A5A5A);
   width: 470px;
   border: solid hsla(0, 0%, 100%, 0.329) 1px;
 }
@@ -57,7 +57,7 @@ body {
 
 .sidebar {
   width: 280px;
-  background-color: hsla(0, 0%, 50%, 0.27);
+ background: linear-gradient(135deg, #8A8A8A, #6F6F6F, #5A5A5A);
   height: 91vh;
   border-radius: 10px;
 }
@@ -78,12 +78,12 @@ body {
 }
 
 .sidebar {
-  background-color: #7F7F7F;
+background: linear-gradient(135deg, #8A8A8A, #6F6F6F, #5A5A5A);
   border: solid hsla(0, 0%, 100%, 0.148) 1px;
 }
 
 .couleurunique {
-  background-color: #7F7F7F;
+background: linear-gradient(135deg, #8A8A8A, #6F6F6F, #5A5A5A);
   border: solid hsla(0, 0%, 100%, 0.148) 1px;
   border-radius: 10px;
 
@@ -102,7 +102,7 @@ body {
 }
 
 .lienhover1 {
- background-color: #7F7F7F;
+background: linear-gradient(135deg, #8A8A8A, #6F6F6F, #5A5A5A);
 border: solid hsla(0, 0%, 100%, 0.047) 1px;
 border-radius: 10px;
 }
@@ -219,8 +219,16 @@ nav .nav-link.active {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+.drapeau path{
+    transition: all 0.3s ease;
+}
 
-
+.drapeau path:hover{
+    fill: #f28451 !important;
+    stroke: #fff;
+    cursor: pointer;
+    transform: scale(1.02);
+}
 
 
 @media (max-width: 991px) {
