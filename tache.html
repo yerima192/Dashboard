@@ -192,534 +192,822 @@
                 </div>
 
                 <div class="   mt-2 rounded-5">
-
-                    <!-- ================= NAV TABS ================= -->
-                    <!-- <div class="moinfoncé p-3 shadow-lg ">
-
-                        <ul class="nav row w-100 g-2" id="taskTab" role="tablist">
-
-                            <li class="col-12 col-md-4 nav-item">
-                                <button class="nav-link active text-white text-center recp shadow-lg" id="attente-tab"
-                                    data-bs-toggle="pill" data-bs-target="#attente" type="button">
-                                    <i class="bi bi-hourglass me-2"></i>
-                                    En attente
-                                </button>
-                            </li>
-
-                            <li class="col-12 col-md-4 nav-item">
-                                <button class="nav-link text-white text-center border-0 bg-transparent" id="cours-tab"
-                                    data-bs-toggle="pill" data-bs-target="#cours" type="button">
-                                    <i class="bi bi-hourglass-split me-2"></i>
-                                    En cours
-                                </button>
-                            </li>
-
-                            <li class="col-12 col-md-4 nav-item">
-                                <button class="nav-link text-white text-center border-0 bg-transparent" id="termine-tab"
-                                    data-bs-toggle="pill" data-bs-target="#termine" type="button">
-                                    <i class="bi bi-hourglass-bottom me-2"></i>
-                                    Terminé
-                                </button>
-                            </li>
-
-                        </ul>
-
-                    </div> -->
-
                     <div class="container-fluid couleurunique  text-white py-4 mt-4">
 
+                            <nav id="navbar-example2" class="navbar px-4 w-100">
+
+                                <div class="moinfoncé p-3 shadow-lg w-100 rounded-4">
+
+                                    <ul class="nav row w-100 g-2" id="taskTab" role="tablist">
+
+                                        <li class="col-12 col-md-4 nav-item" role="presentation">
+                                            <button class="nav-link active text-white text-center recp shadow-lg bg-transparent"
+                                                id="attente-tab" data-bs-toggle="pill" data-bs-target="#attente"
+                                                type="button" role="tab">
+
+                                                <i class="bi bi-hourglass me-2"></i>
+                                                En attente
+                                            </button>
+                                        </li>
+
+                                        <li class="col-12 col-md-4 nav-item" role="presentation">
+                                            <button
+                                                class="nav-link text-white text-center border-0 bg-transparent active recp shadow-lg"
+                                                id="cours-tab" data-bs-toggle="pill" data-bs-target="#cours"
+                                                type="button" role="tab">
+
+                                                <i class="bi bi-hourglass-split me-2"></i>
+                                                En cours
+                                            </button>
+                                        </li>
+
+                                        <li class="col-12 col-md-4 nav-item" role="presentation">
+                                            <button
+                                                class="nav-link text-white text-center border-0 bg-transparent active recp shadow-lg"
+                                                id="termine-tab" data-bs-toggle="pill" data-bs-target="#termine"
+                                                type="button" role="tab">
+
+                                                <i class="bi bi-check-circle me-2"></i>
+                                                Terminé
+                                            </button>
+                                        </li>
+
+                                    </ul>
 
 
-                <!-- NAVBAR -->
+                            </nav>
 
-                <nav id="navbar-example2" class="navbar  px-4  w-100 ">
+                            <div class="tab-content mt-3 ">
 
-                       <div class="moinfoncé p-3 shadow-lg w-100">
+                                <div class="tab-pane bg-transparent fade show active" id="attente" role="tabpanel">
 
-                     <ul class="nav row w-100 g-2" id="taskTab" role="tablist">
+                                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                                        data-bs-smooth-scroll="true"
+                                        class="scrollspy-example p-3 mt-2 couleurunique rounded-4" tabindex="0"
+                                        style="height: 600px; overflow-y: scroll;">
 
-                            <li class="col-12 col-md-4 nav-item">
-                                <button class="nav-link active text-white text-center recp shadow-lg" id="attente-tab"
-                                    data-bs-toggle="pill" data-bs-target="#attente" type="button">
-                                    <i class="bi bi-hourglass me-2"></i>
-                                    En attente
-                                </button>
-                            </li>
+                                        <div id="scrollspyHeading1">
 
-                            <li class="col-12 col-md-4 nav-item">
-                                <button class="nav-link text-white text-center border-0 bg-transparent" id="cours-tab"
-                                    data-bs-toggle="pill" data-bs-target="#cours" type="button">
-                                    <i class="bi bi-hourglass-split me-2"></i>
-                                    En cours
-                                </button>
-                            </li>
+                                            <div class="shadow-lg rounded-5 moinfoncé mb-3">
 
-                            <li class="col-12 col-md-4 nav-item">
-                                <button class="nav-link text-white text-center border-0 bg-transparent" id="termine-tab"
-                                    data-bs-toggle="pill" data-bs-target="#termine" type="button">
-                                    <i class="bi bi-hourglass-bottom me-2"></i>
-                                    Terminé
-                                </button>
-                            </li>
+                                                <div class="row p-3 align-items-center text-white">
 
-                        </ul>
+                                                    <div class="col-md-1">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </div>
 
+                                                    <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                        <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                            AS
+                                                        </div>
+
+                                                        <div>
+                                                            <h5 class="mb-0">Adminou Sani</h5>
+                                                            <small>adminou@mail.com</small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        Administrateur
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        Inactive
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex gap-3">
+
+                                                        <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                        <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                        <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                                <div class="row p-3 align-items-center text-white">
+
+                                                    <div class="col-md-1">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                        <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                            AL
+                                                        </div>
+
+                                                        <div>
+                                                            <h5 class="mb-0">Analystou Idi</h5>
+                                                            <small>analystou@mail.com</small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        Marketeur
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        Inactive
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex gap-3">
+
+                                                        <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                        <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                        <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                                <div class="row p-3 align-items-center text-white">
+
+                                                    <div class="col-md-1">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                        <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                            BT
+                                                        </div>
+
+                                                        <div>
+                                                            <h5 class="mb-0">Bako Tondi</h5>
+                                                            <small>bako@mail.com</small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        Contrôleur
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        Active
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex gap-3">
+
+                                                        <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                        <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                        <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                                <div class="row p-3 align-items-center text-white">
+
+                                                    <div class="col-md-1">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                        <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                            BT
+                                                        </div>
+
+                                                        <div>
+                                                            <h5 class="mb-0">Bako Tondi</h5>
+                                                            <small>bako@mail.com</small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        Contrôleur
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        Active
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex gap-3">
+
+                                                        <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                        <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                        <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                                <div class="row p-3 align-items-center text-white">
+
+                                                    <div class="col-md-1">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                        <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                            BT
+                                                        </div>
+
+                                                        <div>
+                                                            <h5 class="mb-0">Bako Tondi</h5>
+                                                            <small>bako@mail.com</small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        Contrôleur
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        Active
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex gap-3">
+
+                                                        <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                        <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                        <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                                <div class="row p-3 align-items-center text-white">
+
+                                                    <div class="col-md-1">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                        <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                            BT
+                                                        </div>
+
+                                                        <div>
+                                                            <h5 class="mb-0">Bako Tondi</h5>
+                                                            <small>bako@mail.com</small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        Contrôleur
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        Active
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex gap-3">
+
+                                                        <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                        <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                        <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                                <div class="row p-3 align-items-center text-white">
+
+                                                    <div class="col-md-1">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                        <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                            BT
+                                                        </div>
+
+                                                        <div>
+                                                            <h5 class="mb-0">Bako Tondi</h5>
+                                                            <small>bako@mail.com</small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        Contrôleur
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        Active
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex gap-3">
+
+                                                        <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                        <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                        <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                                <div class="row p-3 align-items-center text-white">
+
+                                                    <div class="col-md-1">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                        <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                            BT
+                                                        </div>
+
+                                                        <div>
+                                                            <h5 class="mb-0">Bako Tondi</h5>
+                                                            <small>bako@mail.com</small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-3">
+                                                        Contrôleur
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        Active
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex gap-3">
+
+                                                        <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                        <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                        <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            
+                                <div class="tab-pane fade" id="cours" role="tabpanel">
+
+                                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                                        data-bs-smooth-scroll="true"
+                                        class="scrollspy-example p-3 mt-2 couleurunique rounded-4" tabindex="0"
+                                        style="height: 600px; overflow-y: scroll;">
+
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        GS
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Ganda Souley</h5>
+                                                        <small>ganda@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Développeur
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Active
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        TT
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Tondi Tanko</h5>
+                                                        <small>tondi@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Gestionnaire
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Active
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        TT
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Tondi Tanko</h5>
+                                                        <small>tondi@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Gestionnaire
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Active
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        TT
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Tondi Tanko</h5>
+                                                        <small>tondi@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Gestionnaire
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Active
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        TT
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Tondi Tanko</h5>
+                                                        <small>tondi@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Gestionnaire
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Active
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        TT
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Tondi Tanko</h5>
+                                                        <small>tondi@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Gestionnaire
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Active
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        TT
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Tondi Tanko</h5>
+                                                        <small>tondi@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Gestionnaire
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Active
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        TT
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Tondi Tanko</h5>
+                                                        <small>tondi@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Gestionnaire
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Active
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="termine" role="tabpanel">
+
+                                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                                        data-bs-smooth-scroll="true"
+                                        class="scrollspy-example p-3 mt-2 couleurunique rounded-4" tabindex="0"
+                                        style="height: 600px; overflow-y: scroll;">
+
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        HM
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Hama Moussa</h5>
+                                                        <small>hama@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Designer
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Terminé
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="shadow-lg rounded-5 moinfoncé mb-3">
+
+                                            <div class="row p-3 align-items-center text-white">
+
+                                                <div class="col-md-1">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+
+                                                <div class="col-md-3 d-flex align-items-start gap-3">
+
+                                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
+                                                        IK
+                                                    </div>
+
+                                                    <div>
+                                                        <h5 class="mb-0">Issa Karim</h5>
+                                                        <small>issa@mail.com</small>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    Analyste
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    Terminé
+                                                </div>
+
+                                                <div class="col-md-3 d-flex gap-3">
+
+                                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
+                                                    <i class="bi bi-trash fs-5 fw-bold"></i>
+                                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
-
-                </nav>
-
-                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
-                    class="scrollspy-example p-3 mt-2 couleurunique" tabindex="0" style="height: 600px; overflow-y: scroll;">
-                    <div id="scrollspyHeading1">
-
-                        <div class=" r shadow-lg moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        AS
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="mt-1 shadow-lg rounded-5 moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        AL
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Analystou Idi</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    marketeur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="mt-1 shadow-lg rounded-5 moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        BT
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Bako Tondi</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Controleur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Active
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        GS
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        TT
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        TT
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        TT
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        TT
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        TT
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        TT
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="mt-2 shadow-lg rounded-5  moinfoncé">
-
-                            <div class="row p-3">
-
-                                <div class="col-md-1">
-                                    <input type="checkbox" class="form-check-input">
-                                </div>
-
-                                <div class="col-md-3 d-flex align-items-start gap-3">
-
-                                    <div class="avatar rounded-circle colororange fw-bold p-2 fs-5">
-                                        TT
-                                    </div>
-
-                                    <div>
-                                        <h5 class="mb-0">Adminou Sani</h5>
-                                        <small>Adminou@mail.com</small>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    Administrateur
-                                </div>
-
-                                <div class="col-md-2">
-                                    Inactive
-                                </div>
-
-                                <div class="col-md-3 d-flex gap-3">
-
-                                    <i class="bi bi-pencil fs-5 fw-bold"></i>
-                                    <i class="bi bi-trash fs-5 fw-bold"></i>
-                                    <i class="bi bi-three-dots-vertical fs-5 fw-bold"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
                 </div>
 
 

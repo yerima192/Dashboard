@@ -229,6 +229,20 @@ nav .nav-link.active {
     cursor: pointer;
     transform: scale(1.02);
 }
+#taskTab .nav-link{
+    background: transparent !important;
+    border: none;
+    color: white;
+}
+
+#taskTab .nav-link.active{
+    color: white !important;
+}
+
+#taskTab .nav-link:focus,
+#taskTab .nav-link:active{
+    background: #888787 !important;
+}
 
 
 @media (max-width: 991px) {
