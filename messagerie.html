@@ -31,7 +31,7 @@
                 <i class="bi bi-list fs-2"></i>
             </button>
 
-            <img src="./Assets/Logo (1).png" class="img-fluid" />
+            <img src="./Assets/Logo (1).png" class="img-fluid petite" />
         </nav>
 
         <div class="d-flex gap-3 mt-4">
@@ -147,11 +147,11 @@
         <main class="main-content  ">
             <div class="couleurunique shadow-lg text-white p-3 d-flex justify-content-between  ">
                 <div>
-                    <h3>Bonjour, Yerima Djibo</h3>
+                    <h3 class="grandeur">Bonjour, Yerima Djibo</h3>
                     <div>
-                        <i class="bi bi-houses-fill"></i>
-                        <i class="bi bi-chevron-right"></i>
-                        <span>Tableau de bord</span>
+                        <i class="bi bi-houses-filltableau"></i>
+                        <i class="bi bi-chevron-righttableau"></i>
+                        <span class="tableau">Tableau de bord</span>
 
                     </div>
                 </div>
@@ -166,273 +166,282 @@
 
 
             <div class="container-fluid p-4 couleurunique rounded-5 shadow-lg mt-2">
+                <div class=" couleurunique  text-white mt-2 ">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
+                        class="scrollspy-example p-3 rounded-5 mt-2 couleurunique" tabindex="0"
+                        style="min-height: 75vh; overflow-y: scroll;">
 
-                <div class="moinfoncé  p-3  shadow-lg ">
+                        <div class="moinfoncé  p-3  shadow-lg ">
 
-                    <ul class="nav row w-100 g-2" id="messagerieTab" role="tablist">
+                            <ul class="nav row w-100 g-2" id="messagerieTab" role="tablist">
 
-                        <li class="col-12 col-md-4 col-lg-2 nav-item" role="presentation">
-                            <button class="nav-link active text-white text-center recp shadow-lg" id="reception-tab"
-                                data-bs-toggle="pill" data-bs-target="#reception" type="button">
+                                <li class="col-6 col-md-4 col-lg-2 nav-item" role="presentation">
+                                    <button class="nav-link active text-white text-center recp shadow-lg annulation onglet-special"
+                                        id="reception-tab" data-bs-toggle="pill" data-bs-target="#reception"
+                                        type="button">
 
-                                <i class="bi bi-envelope m-2"></i>
-                                Réception
-                            </button>
-                        </li>
+                                        <i class="bi bi-envelope m-2"></i>
+                                        Réception
+                                    </button>
+                                </li>
 
-                        <li class="col-12 col-md-4 col-lg-2 nav-item" role="presentation">
-                            <button class="nav-link text-white text-center border-0  bg-transparent " id="envoi-tab" data-bs-toggle="pill"
-                                data-bs-target="#envoi" type="button">
+                                <li class="col-6 col-md-4 col-lg-2 nav-item" role="presentation">
+                                    <button class="nav-link text-white text-center border-0  bg-transparent  onglet-special"
+                                        id="envoi-tab" data-bs-toggle="pill" data-bs-target="#envoi" type="button">
 
-                                <i class="bi bi-send m-2"></i>
-                                Envoi
-                            </button>
-                        </li>
+                                        <i class="bi bi-send m-2"></i>
+                                        Envoi
+                                    </button>
+                                </li>
 
-                        <li class="col-12 col-md-4 col-lg-2 nav-item" role="presentation">
-                            <button class="nav-link text-white rounded-4 text-center  border-0 bg-transparent" id="brouillon-tab"
-                                data-bs-toggle="pill" data-bs-target="#brouillon" type="button">
+                                <li class="col-6 col-md-4 col-lg-2 nav-item" role="presentation">
+                                    <button class="nav-link text-white rounded-4 text-center  border-0 bg-transparent"
+                                        id="brouillon-tab" data-bs-toggle="pill" data-bs-target="#brouillon"
+                                        type="button">
 
-                                <i class="bi bi-envelope m-2"></i>
-                                Brouillon
-                            </button>
-                        </li>
+                                        <i class="bi bi-envelope m-2"></i>
+                                        Brouillon
+                                    </button>
+                                </li>
 
-                        <li class="col-12 col-md-4 col-lg-2 nav-item" role="presentation">
-                            <button class="nav-link text-white rounded-4 text-center  border-0 bg-transparent" id="epingle-tab"
-                                data-bs-toggle="pill" data-bs-target="#epingle" type="button">
+                                <li class="col-6 col-md-4 col-lg-2 nav-item" role="presentation">
+                                    <button class="nav-link text-white rounded-4 text-center  border-0 bg-transparent"
+                                        id="epingle-tab" data-bs-toggle="pill" data-bs-target="#epingle" type="button">
 
-                                <i class="bi bi-envelope m-2"></i>
-                                Epinglé
-                            </button>
-                        </li>
+                                        <i class="bi bi-envelope m-2"></i>
+                                        Epinglé
+                                    </button>
+                                </li>
 
-                        <li class="col-12 col-md-4 col-lg-2 nav-item" role="presentation">
-                            <button class="nav-link text-white rounded-4 text-center  border-0 bg-transparent" id="spam-tab"
-                                data-bs-toggle="pill" data-bs-target="#spam" type="button">
+                                <li class="col-6 col-md-4 col-lg-2 nav-item" role="presentation">
+                                    <button class="nav-link text-white rounded-4 text-center  border-0 bg-transparent"
+                                        id="spam-tab" data-bs-toggle="pill" data-bs-target="#spam" type="button">
 
-                                <i class="bi bi-envelope m-2"></i>
-                                Spam
-                            </button>
-                        </li>
+                                        <i class="bi bi-envelope m-2"></i>
+                                        Spam
+                                    </button>
+                                </li>
 
-                        <li class="col-12 col-md-4 col-lg-2 nav-item" role="presentation">
-                            <button class="nav-link text-white rounded-4 text-center  border-0 bg-transparent" id="corbeille-tab"
-                                data-bs-toggle="pill" data-bs-target="#corbeille" type="button">
+                                <li class="col-6 col-md-4 col-lg-2 nav-item" role="presentation">
+                                    <button class="nav-link text-white rounded-4 text-center  border-0 bg-transparent"
+                                        id="corbeille-tab" data-bs-toggle="pill" data-bs-target="#corbeille"
+                                        type="button">
 
-                                <i class="bi bi-trash m-2"></i>
-                                Corbeille
-                            </button>
-                        </li>
+                                        <i class="bi bi-trash m-2"></i>
+                                        Corbeille
+                                    </button>
+                                </li>
 
-                    </ul>
-
-                </div>
-
-
-                <div class="tab-content mt-4">
-
-                    <div class="tab-pane fade show active p-2 bg-transparent" id="reception">
-
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-
-                            <div class="d-flex gap-3 text-white fs-4">
-                                <i class="bi bi-square"></i>
-                                <i class="bi bi-trash"></i>
-                                <i class="bi bi-envelope"></i>
-                                <i class="bi bi-folder"></i>
-                                <i class="bi bi-tag"></i>
-                            </div>
-
-                            <div class="d-flex gap-3 text-white fs-4 ">
-                                <i class="bi bi-arrow-clockwise"></i>
-                                <i class="bi bi-three-dots-vertical"></i>
-                            </div>
+                            </ul>
 
                         </div>
 
-                        <div class="moinfoncé rounded-1 text-white p-4 shadow mb-3">
 
-                            <div class="row align-items-center">
+                        <div class="tab-content mt-4">
 
-                                <div class="col-lg-1 col-md-2 d-flex gap-3 fs-4 flex-wrap">
-                                    <i class="bi bi-square"></i>
-                                    <i class="bi bi-pin-angle"></i>
-                                </div>
+                            <div class="tab-pane fade show active p-2 bg-transparent" id="reception">
 
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center gap-3">
-                                    <div
-                                        class="rounded-circle d-flex justify-content-center align-items-center colororange p-2">
-                                        <h4 class="m-0">ZT</h4>
+                                <div class="d-flex justify-content-between align-items-center mb-2 ">
+
+                                    <div class="d-flex gap-3 text-white fs-5 ">
+                                        <i class="bi bi-square"></i>
+                                        <i class="bi bi-trash"></i>
+                                        <i class="bi bi-envelope"></i>
+                                        <i class="bi bi-folder"></i>
+                                        <i class="bi bi-tag"></i>
                                     </div>
 
-                                    <h6 class="m-0">Zibo Tanko</h6>
+                                    <div class="d-flex gap-3 text-white fs-5 ">
+                                        <i class="bi bi-arrow-clockwise"></i>
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </div>
+
                                 </div>
 
-                                <div class="col-lg-3 col-md-6">
-                                    <p>Rapport du cas du client N°00000</p>
+                                <div class="moinfoncé rounded-1 text-white p-4 shadow mb-3">
+
+                                    <div class="row align-items-center">
+
+                                        <div class="col-lg-1 col-md-2 d-flex gap-3 fs-4 ">
+                                            <i class="bi bi-square"></i>
+                                            <i class="bi bi-pin-angle"></i>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 d-flex align-items-center gap-3">
+                                            <div
+                                                class="rounded-circle d-flex justify-content-center align-items-center colororange p-2">
+                                                <h4 class="m-0">ZT</h4>
+                                            </div>
+
+                                            <h6 class="m-0">Zibo Tanko</h6>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6">
+                                            <p>Rapport du cas du client N°00000</p>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6">
+                                            <p class="">
+                                                Lorem ipsum sit dolor amet ipsum sit dolor amet ...
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-2 text-end">
+                                            <span>08:23 AM</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="moinfoncé rounded-1 text-white p-4 shadow mb-3">
+
+                                    <div class="row align-items-center">
+
+                                        <div class="col-lg-1 col-md-2 d-flex gap-3 fs-4 ">
+                                            <i class="bi bi-square"></i>
+                                            <i class="bi bi-pin-angle"></i>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 d-flex align-items-center gap-3">
+                                            <div
+                                                class="rounded-circle d-flex justify-content-center align-items-center colororange p-2">
+                                                <h4 class="m-0">ZT</h4>
+                                            </div>
+
+                                            <h6 class="m-0">Zibo Tanko</h6>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6">
+                                            <p>Rapport du cas du client N°00000</p>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6">
+                                            <p class="">
+                                                Lorem ipsum sit dolor amet ipsum sit dolor amet ...
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-2 text-end">
+                                            <span>08:23 AM</span>
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="col-lg-3 col-md-6">
-                                    <p class="">
-                                        Lorem ipsum sit dolor amet ipsum sit dolor amet ...
-                                    </p>
+                            
+
+                            </div>
+
+
+                            <div class="tab-pane fade bg-transparent active" id="envoi">
+
+                                <div class="d-flex justify-content-between align-items-center mb-4 ">
+
+                                    <div class="d-flex gap-3 text-white fs-4">
+                                        <i class="bi bi-square"></i>
+                                        <i class="bi bi-trash"></i>
+                                        <i class="bi bi-envelope"></i>
+                                        <i class="bi bi-folder"></i>
+                                        <i class="bi bi-tag"></i>
+                                    </div>
+
+                                    <div class="d-flex gap-3 text-white fs-4 ">
+                                        <i class="bi bi-arrow-clockwise"></i>
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </div>
+
                                 </div>
 
-                                <div class="col-lg-2 text-end">
-                                    <span>08:23 AM</span>
+                                <div class="moinfoncé rounded-1 text-white p-4 shadow mb-3">
+
+                                    <div class="row align-items-center">
+
+                                        <div class="col-lg-1 col-md-2 d-flex gap-3 fs-4 flex-wrap">
+                                            <i class="bi bi-square"></i>
+                                            <i class="bi bi-pin-angle"></i>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 d-flex align-items-center gap-3">
+                                            <div
+                                                class="rounded-circle d-flex justify-content-center align-items-center colororange p-2">
+                                                <h4 class="m-0">ZT</h4>
+                                            </div>
+
+                                            <h6 class="m-0">Zibo Tanko</h6>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6">
+                                            <p>Rapport du cas du client N°00000</p>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6">
+                                            <p class="">
+                                                Lorem ipsum sit dolor amet ipsum sit dolor amet ...
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-2 text-end">
+                                            <span>08:23 AM</span>
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
                             </div>
 
-                        </div>
 
-                        <div class="moinfoncé rounded-1 text-white p-4 shadow mb-3">
+                            <!-- BROUILLON -->
+                            <div class="tab-pane fade" id="brouillon"></div>
 
-                            <div class="row align-items-center">
+                            <!-- EPINGLE -->
+                            <div class="tab-pane fade" id="epingle"></div>
 
-                                <div class="col-lg-1 col-md-2 d-flex gap-3 fs-4 flex-wrap">
-                                    <i class="bi bi-square"></i>
-                                    <i class="bi bi-pin-angle"></i>
-                                </div>
+                            <!-- SPAM -->
+                            <div class="tab-pane fade" id="spam"></div>
 
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center gap-3">
-                                    <div
-                                        class="rounded-circle d-flex justify-content-center align-items-center colororange p-2">
-                                        <h4 class="m-0">DD </h4>
-                                    </div>
-
-                                    <h6 class="m-0">DAndali Dantani</h6>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6">
-                                    <p>Rapport du cas du client N°00000</p>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6">
-                                    <p class="">
-                                        Lorem ipsum sit dolor amet ipsum sit dolor amet ...
-                                    </p>
-                                </div>
-
-                                <div class="col-lg-2 text-end">
-                                    <span>08:23 AM</span>
-                                </div>
-
-                            </div>
+                            <!-- CORBEILLE -->
+                            <div class="tab-pane fade" id="corbeille"></div>
 
                         </div>
 
                     </div>
 
 
-                    <div class="tab-pane fade bg-transparent active" id="envoi">
-
-                        <div class="d-flex justify-content-between align-items-center mb-4 ">
-
-                            <div class="d-flex gap-3 text-white fs-4">
-                                <i class="bi bi-square"></i>
-                                <i class="bi bi-trash"></i>
-                                <i class="bi bi-envelope"></i>
-                                <i class="bi bi-folder"></i>
-                                <i class="bi bi-tag"></i>
-                            </div>
-
-                            <div class="d-flex gap-3 text-white fs-4 ">
-                                <i class="bi bi-arrow-clockwise"></i>
-                                <i class="bi bi-three-dots-vertical"></i>
-                            </div>
-
-                        </div>
-
-                        <div class="moinfoncé rounded-1 text-white p-4 shadow mb-3">
-
-                            <div class="row align-items-center">
-
-                                <div class="col-lg-1 col-md-2 d-flex gap-3 fs-4 flex-wrap">
-                                    <i class="bi bi-square"></i>
-                                    <i class="bi bi-pin-angle"></i>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center gap-3">
-                                    <div
-                                        class="rounded-circle d-flex justify-content-center align-items-center colororange p-2">
-                                        <h4 class="m-0">ZT</h4>
-                                    </div>
-
-                                    <h6 class="m-0">Zibo Tanko</h6>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6">
-                                    <p>Rapport du cas du client N°00000</p>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6">
-                                    <p class="">
-                                        Lorem ipsum sit dolor amet ipsum sit dolor amet ...
-                                    </p>
-                                </div>
-
-                                <div class="col-lg-2 text-end">
-                                    <span>08:23 AM</span>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
 
 
-                    <!-- BROUILLON -->
-                    <div class="tab-pane fade" id="brouillon"></div>
 
-                    <!-- EPINGLE -->
-                    <div class="tab-pane fade" id="epingle"></div>
 
-                    <!-- SPAM -->
-                    <div class="tab-pane fade" id="spam"></div>
 
-                    <!-- CORBEILLE -->
-                    <div class="tab-pane fade" id="corbeille"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 </div>
-
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-    </main>
+        </main>
 
     </div>
 
